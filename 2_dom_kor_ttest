@@ -1,12 +1,12 @@
-#spss>save as>...
+#Matrica je importovana u softver SPSSS, iz kog je sacuvana kao .csv /comma-separated/ fajl, kojim je dalje manipulisano u R okruzenju
 
 
 #deskritivna
 install.packages("haven", dependencies = T)
 library(haven)
 
-    #POPRAVITI OVO NIJE SPSS NEGO CSV   
-    dataset<- read_spss(file.choose())
+       
+    dataset<- read_csv(file.choose())
     #check
     colnames(dataset)
 
@@ -54,8 +54,9 @@ colnames(dataset)
 t1.ind <- t.test(Zmalo_verovatne_vrline~Pol, alternative='two.sided', conf.level=.95,  var.equal=FALSE, data=dataset)
 t1.ind
 
+#plot
 install.packages("ggplot2")
-library(ggplot2
+library(ggplot2)
 
         boxplot(Zmalo_verovatne_vrline ~ Pol, data=dataset, xlab="Pol", ylab="MVV")
 
