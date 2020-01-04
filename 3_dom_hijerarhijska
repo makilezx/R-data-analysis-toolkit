@@ -1,6 +1,3 @@
-#domaci 2/hijerarhijska reg
-
-
 #pouzdanost
 install.packages("haven", dependencies = T)
 library(haven)
@@ -10,7 +7,6 @@ matrica <- read_spss(file.choose())
 #check
 colnames(matrica)
 
-#objekat
 ajtemi_SWLS <- subset(matrica, select=c(417:421)) 
 #check
 colnames(ajtemi_SWLS)
