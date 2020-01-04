@@ -68,4 +68,9 @@ alpha(ajtemi_SWLS, check.keys = T)
 
 
 
-
+#VIF
+library(car)
+           vif(HIREGAN_mod1)
+           tolerance <- 1/vif(HIREGAN_mod1)
+                  
+              tolerance
