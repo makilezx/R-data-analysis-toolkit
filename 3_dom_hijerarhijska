@@ -42,7 +42,7 @@ alpha(ajtemi_SWLS, check.keys = T)
 #ANOVA
 
       anova(HIREGAN_mod1, HIREGAN_mod2, HIREGAN_mod3)
-      #HIREGAN_mod1 die beste
+      #HIREGAN_mod3 die beste
 
 #brisanje ispitanika sa SR van ±2.5
       matrica_template <- subset(matrica, select=c(417:421))
