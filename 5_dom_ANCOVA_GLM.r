@@ -1,2 +1,2 @@
 # stats_MPI
-test_domaci
+test
