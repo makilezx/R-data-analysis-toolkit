@@ -17,4 +17,4 @@ The repository includes the following code snippets:
 
 4. `ancova_analysis.R`: This snippet demonstrates the use of ANCOVA (Analysis of Covariance) to assess the differences between groups while controlling for covariates.
 
-
+5. `cfa_analysis.R`: This snippet demonstrates the implementation of Confirmatory Factor Analysis (CFA) to assess the fit of a specified theoretical factor structure to the observed data in the research dataset. It involves testing the goodness-of-fit indices, examining factor loadings, and evaluating model fit indices such as chi-square, comparative fit index (CFI), root mean square error of approximation (RMSEA), and standardized root mean square residual (SRMR).
