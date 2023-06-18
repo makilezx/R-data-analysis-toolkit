@@ -1,4 +1,3 @@
-#biblz
 install.packages("lavaan")
 install.packages("psych")
 install.packages("semPlot")
@@ -8,14 +7,11 @@ library(psych)
 library(semPlot)
 library(haven)
 
-#CFA
- 
-#matrica 
+
 dataset<- read_spss(file.choose())
-#check
 colnames(dataset)
 
-    describe(dataset)
+describe(dataset)
         
 #mod1 - 1 faktor, sve stavke ga opterecuju
         PANAS_mod1<-'F=~ PANAS_1 + PANAS_2 + PANAS_3 + PANAS_4 + PANAS_5 + PANAS_6 + PANAS_7 + PANAS_8 + PANAS_9 + PANAS_10 + PANAS_11 + PANAS_12 + PANAS_13 + PANAS_14 + PANAS_15 + PANAS_16 + PANAS_17 + PANAS_18 + PANAS_19 + PANAS_20'
@@ -28,7 +24,7 @@ colnames(dataset)
         
         summary(PANAS_mod1_fit, standardized = TRUE, fit.measures = TRUE)
         
-        #viz
+ 
         PANAS_viz<- semPaths(PANAS_mod1_fit, 
                                what = "std",              
                                layout = "tree",           
@@ -50,7 +46,7 @@ colnames(dataset)
         
         summary(PANAS_mod2_fit, standardized = TRUE, fit.measures = TRUE)
         
-        #viz
+        
         PANAS_viz<- semPaths(PANAS_mod2_fit, 
                              what = "std",              
                              layout = "tree",           
@@ -72,7 +68,7 @@ colnames(dataset)
         
         summary(PANAS_mod3_fit, standardized = TRUE, fit.measures = TRUE)
         
-        #viz
+       
         PANAS_viz<- semPaths(PANAS_mod3_fit, 
                              what = "std",              
                              layout = "tree",           
@@ -96,7 +92,7 @@ colnames(dataset)
         
         summary(PANAS_mod4_fit, standardized = TRUE, fit.measures = TRUE)
         
-        #viz
+     
         PANAS_viz<- semPaths(PANAS_mod4_fit, 
                              what = "std",              
                              layout = "tree",           
